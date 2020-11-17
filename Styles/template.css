@@ -1,42 +1,48 @@
 /* Basics */
 
 /* Colour palette generated using coolers.co (I'm colourblind, so I need the help) */
-/*
-Black Coffee: #32292F
-Baby Powder (White): #FDFFFC
-Amazon (Green): #307351
-Violet Blue Crayola (Blue-ish): #7776BC
-Atomic Tangerine (Orange-ish): #F68E5F
-*/
+:root{
+    --blue: #6B6DC7;
+    --black: #32292F;
+    --white: #FDFFFC;
+    --green: #307351;
+    --purple: #C9BFD9;
+}
 
 * {
     margin: auto;
     text-align: center;
-    color: #FDFFFC;
+    color: var(--white);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #C9BFD9;
+    background-color: var(--purple);
 }
+
+p {font-size: 2vw;}
+h1 {font-size: 6vw;}
+h2 {font-size: 5vw;}
+h3 {font-size: 4vw;}
+h4 {font-size: 3vw;}
 
 
 /* Navigation Bar/ Header */
 
 nav {
-    background-color: #32292F;
+    background-color: var(--black);
 }
 
 nav td{
-    padding: 0.2em 1.4em;
-    font-size: 2vw;
+    padding: 0.7em 1em;
+    font-size: 2.5vw;
 }
 
 
 /* Something Else */
 
 .banner{
-    background-color: #7779DC;
+    background-color: var(--blue);
     width: 75%;
 }
 
