@@ -1,0 +1,14 @@
+* {
+    margin: auto;
+}
+
+
+nav {
+    background-color: rgb(134, 93, 172);
+}
+
+.banner{
+    background-color: blueviolet;
+    color: white;
+    width: 66%;
+}
