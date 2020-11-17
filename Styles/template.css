@@ -1,14 +1,45 @@
+/* Basics */
+
+/* Colour palette generated using coolers.co (I'm colourblind, so I need the help) */
+/*
+Black Coffee: #32292F
+Baby Powder (White): #FDFFFC
+Amazon (Green): #307351
+Violet Blue Crayola (Blue-ish): #7776BC
+Atomic Tangerine (Orange-ish): #F68E5F
+*/
+
 * {
     margin: auto;
+    text-align: center;
+    color: #FDFFFC;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: #C9BFD9;
+}
+
+
+/* Navigation Bar/ Header */
 
 nav {
-    background-color: rgb(134, 93, 172);
+    background-color: #32292F;
 }
 
+nav td{
+    padding: 0.2em 1.4em;
+    font-size: xx-large;
+}
+
+
+/* Something Else */
+
 .banner{
-    background-color: blueviolet;
-    color: white;
-    width: 66%;
+    background-color: #7779DC;
+    width: 75%;
+}
+
+.banner * {
+    padding: 0.2em 2em;
 }
