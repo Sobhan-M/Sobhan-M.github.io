@@ -21,10 +21,11 @@ body {
 }
 
 p {font-size: 2vw;}
-h1 {font-size: 6vw;}
-h2 {font-size: 5vw;}
-h3 {font-size: 4vw;}
-h4 {font-size: 3vw;}
+h1 {font-size: 4vw;}
+h2 {font-size: 3.5vw;}
+h3 {font-size: 3vw;}
+h4 {font-size: 2.5vw;}
+
 
 
 /* Navigation Bar/ Header */
@@ -35,11 +36,11 @@ nav {
 
 nav td{
     padding: 0.7em 1em;
-    font-size: 2.5vw;
+    font-size: 2.25vw;
 }
 
 
-/* Something Else */
+/* banners */
 
 .banner{
     background-color: var(--blue);
@@ -49,3 +50,17 @@ nav td{
 .banner * {
     padding: 0.2em 2em;
 }
+
+
+/* not banners */
+.not_banner * {color: var(--black);}
+
+/* cat */
+figure.cat {
+    width: 50%;
+    font-size: 1.2vw;
+}
+
+img.cat{
+    border: 0.5vw #32292F solid;
+    padding: 0px;}
