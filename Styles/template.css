@@ -35,14 +35,11 @@ li {
 #what_to_expect {width: 50%;}
 
 
-/* Navigation Bar */
+/* Navigation Bar and Footer*/
 
 nav {
     background-color: var(--black);
 }
-
-
-/* Footer */
 
 footer {
     background-color: var(--black);
@@ -60,7 +57,10 @@ nav a {
     text-decoration: none;
     padding: 0.5em 0.75em;
     font-size: 2vw;}
+
 nav a:hover {background-color: var(--grey);}
+
+a.current_page {background-color: var(--grey);}
 
 
 /* banners */
