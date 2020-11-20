@@ -12,7 +12,10 @@
 
         <link rel = "stylesheet" type = "text/CSS" href = "Styles/template.css"/>
         <style type = "text/CSS">
-            #institute *, #grades *, #field * {font-weight: bold;}
+            .institute, .field, .grades {font-weight: bold;}
+            .banner .institute, 
+            .banner .field, 
+            .banner .grades {color: #d3d3d3;}
         </style>
     </head>
     
@@ -25,8 +28,8 @@
                 <table>
                     <tr>
                         <td><a href = "index.html"> Home </a></td>
-                        <td><a href = "education.html"> Education </a></td>
-                        <td><a href = ""> Work Experience </a></td>
+                        <td><a class = "current_page" href = "education.html"> Education </a></td>
+                        <td><a href = "work.html"> Work Experience </a></td>
                         <td><a href = ""> Personal Projects </a></td>
                         <td><a href = ""> Biography </a></td>
                     </tr>
@@ -43,30 +46,30 @@
         <!-- education -->
         <section id = "education_list">
             <div class = "education banner" id = "concordia">
-                <h3> 2019 - Current </h3>
+                <br/><h3> 2019 - Current </h3><br/>
                 <p>
                     Studying towards a <span class = "field"> Bachelor of Computer Science </span> at <span class = "institute"> Concordia University </span> 
                     in Montreal. I also have a minor in <span class = "field"> Mathematics and Statistics </span>. As of writing this, I have a 
                     <span class = "grades"> GPA of 4.19 </span>.
-                </p>
+                </p><br/>
             </div>
             
 
             <div class = "education not_banner" id = "ib">
-                <h3> 2017 - 2019</h3>
-                <p> I attended <span class = "institute"> Towheed Iranian School in Dubai </span>, where I studied towards the 
+                <br/><h3> 2017 - 2019</h3><br/>
+                <p> I attended <span class = "institute">Towheed Iranian School in Dubai</span>, where I studied towards the 
                     <span class = "field"> IB (International Baccalaureate) Diploma </span>. My subjects (which were severely 
                     limited by my school's lack of resources) were Persian HL, English SL, Business and Management HL, 
                     Physics SL, Chemistry SL, and Mathematics SL. My final result was <span class = "grades"> 36 out of 45 </span>.
-                </p>
+                </p><br/>
             </div>
             
 
             <div class = "education banner" id = "towheed">
-                <h3> 2007 - 2017 </h3>
+                <br/><h3> 2007 - 2017 </h3><br/>
                 <p>
                     I attended <span class = "institute"> Towheed Iranian School in Dubai </span> for both primary and secondary school. 
-                </p>
+                </p><br/>
             </div>
             
         </section>
