@@ -21,11 +21,12 @@ body {
     background-color: var(--purple);
 }
 
-p {font-size: 2.15vw;}
+p {font-size: 1.75vw;}
 h1 {font-size: 4vw;}
 h2 {font-size: 3.5vw;}
 h3 {font-size: 3vw;}
 h4 {font-size: 2.5vw;}
+h5 {font-size: 2vw;}
 
 /*ul {list-style-position: inside;}*/
 li {
@@ -43,6 +44,7 @@ nav {
 
 footer {
     background-color: var(--black);
+    font-size: 1.1vw;
 }
 
 footer td{
