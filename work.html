@@ -5,14 +5,28 @@
     <head>
         <title> Sobhan's Education and Academics </title>
         <meta charset = "utf-8"/>
-        <meta name = "description" content = "An indepth look at Sobhan's academic background."/>
+        <meta name = "description" content = "My career background."/>
         <meta name = "author" content = "Sobhan Mehrpour"/>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-        <meta name = "keywords" content = "resume, education, academics, academia, sobhan m, sobhan mehrpour, sobhan mehrpour kevishahi"/>
+        <meta name = "keywords" content = "resume, work, career, career background, sobhan m, sobhan mehrpour, sobhan mehrpour kevishahi"/>
 
         <link rel = "stylesheet" type = "text/CSS" href = "Styles/template.css"/>
         <style type = "text/CSS">
             #institute *, #grades *, #field * {font-weight: bold;}
+            h3 {padding-top: 1.5%;
+                padding-bottom: 1.5%;}
+            h5 {padding-bottom: 1.5%;}
+            p {padding-bottom: 2%;
+                text-align: justify;}
+            .filter td {vertical-align: top;
+                text-align: left;
+                width: 10em;;}
+            .filter h5 {text-align: left;}
+            .filter td input {margin-left:20%;}
+            .filter td h5 {margin-left:20%;}
+            button {margin: 2%;
+                padding: 2% 8%;}
+            td.button_cell {text-align: center;}
         </style>
     </head>
     
@@ -35,46 +49,93 @@
         </header>
         <br/>
 
-        <!-- Work Experience -->
-
-        <section id = "work_experience">
-            <!-- Freelance Writer -->
-            <div class = "banner work current">
-                <h2> Freelance Content Writer </h2>
-                <table class = "work_details">
-                    <tr>
-                        <th>Duration</th>
-                        <td> May, 2020 -> Current</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td> I did a thing or two, dumb dumb.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class = "not_banner work internship">
-                <h2> ServCorp Internship </h2>
+        <!-- Filters -->
+        <section class = "filter not_banner">
+            <form action = "">
                 <table>
                     <tr>
-                        <th>Duration</th>
-                        <td> July, 2018 -> August, 2018 </td>
-                    </tr>
-                    <tr>
-                        <th>Company Details</th>
                         <td>
-                            ServCorp is a provider of serviced offices, meeting rooms, coworking spaces, and virtual offices. 
-                            They are international company, but I interned at the branch operating out of Emirates Towers, Dubai.
+                            <h5> Sorting </h5>
+                            <input type = "radio" name = "order" value = "new">
+                            <label> Sort By Newest </label> <br/>
+                            <input type = "radio" name = "order" value = "old">
+                            <label> Sort By Oldest </label> <br/>
+                        </td>
+                        <td>
+                            <h5> Filters </h5>
+                            <input type = "checkbox" name = "filter" value = "current">
+                            <label> Current </label> <br/>
+                            <input type = "checkbox" name = "filter" value = "temporary">
+                            <label> Temporary </label> <br/>
+                            <input type = "checkbox" name = "filter" value = "internship">
+                            <label> Internship </label> <br/>
                         </td>
                     </tr>
-                        <th>Description</th>
-                        <td>
-                            I worked closely with the marketing team. I was given a broad range of tasks during my short time at the company.
-                            My tasks included auditing websites, translating information to be used in creating the website of a new branch,
-                            minor website development, market research, and did some training with Google Ads.
+                    <tr>
+                        <td class = "button_cell" colspan = "2">
+                            <button type = "button" id = "filter_button" onclick = "filter();"> Filter </button>
                         </td>
                     </tr>
                 </table>
+            </form>
+        </section>
+        <br/>
+
+
+        <!-- Work Experience -->
+        <section id = "work_experience">
+            
+            <div class = "banner work current">
+                <h3> Freelance Content Writer </h3>
+                <h5> May, 2020 - Current</h4>
+                <p> 
+                    After the COVID-19 pandemic took away my other sources of income, 
+                    I decided to make the best of the situation and try to make an income online. 
+                    Writing was the one skill I thought I would do best at, as I had been paid for my
+                    writing a few times in the past.
+                </p>
+                <h5> Description </h5>
+                <p>
+                    My clients send the topic they want written, as well as the word count they want.
+                    My job is to research the topic to find useful information, and write the articles, blogs,
+                    or copies my clients want.
+                </p>
+                <p>
+                    I'm happy to report that my clients are more than happy with my work, and I've
+                    continuously tried to improve my craft by taking reputable seminars.
+                </p>
+            </div>
+
+            <div class = "not_banner work temporary">
+                <h3> Freelance Photographer </h3>
+                <h5> September, 2019 - March, 2020 </h5>
+                <p>
+                    I started doing freelance photography after I moved to Montreal and started University.
+                    I used my hobby to make a bit of income to support my studies until I could find a 
+                    more reliable form of employment. Unfortunately, finding even basic work without speaking 
+                    French in Montreal proved much harder than I imagined.
+                </p>
+                <p>
+                    That's why my temporary means of income lasted for longer than I would have expected, 
+                    before coming to an end because of the COVID-19 lockdowns.
+                </p>
+
+            </div>
+
+            <div class = "banner work internship">
+                <h3> ServCorp Marketing Intern </h3>
+                <h5> July, 2018 - August, 2018 </h5>
+                <h5>Company Details</h5>
+                <p>
+                    ServCorp is a provider of serviced offices, meeting rooms, coworking spaces, and virtual offices. 
+                    They are international company, but I interned at the branch operating out of Emirates Towers, Dubai.
+                </p>
+                <h5>Description</h5>
+                <p>
+                    I worked closely with the marketing team. I was given a broad range of tasks during my short time at the company.
+                    My tasks included auditing websites, translating information to be used in creating the website of a new branch,
+                    minor website development, market research, and did some training with Google Ads.
+                </p>
             </div>
 
         </section>
@@ -91,5 +152,9 @@
             </table>
             © Sobhan Mehrpour 2020
         </footer>
+
+        <script>
+            let work = document.querySelectorAll(".work");
+        </script>
     </body>
 </html>
