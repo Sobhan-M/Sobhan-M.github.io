@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root{
+    --primary: #111111;
+    --seconday: #e9f1f7;
+    --tertiary: #4A0F5A;
+    --highlight-1: #1B0139;
+    --highlight-2: #1d1d1d;
+
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    background-color: var(--highlight-2);
+    color: var(--seconday);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--primary);
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4rem;
+}
+.nav-list {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    /* transition: 0.2s; */
+}
+.nav-item i {
+    font-size: 2.5rem;
+    padding: 0.75rem;
+}
+.nav-item p {
+    margin-left: 0.75rem;
+    display: none;
+}
+.nav-bar:hover {
+    width: 11rem;
+}
+.nav-bar:hover p {
+    display: block;
+}
+
+.nav-item:hover {
+    background-color: var(--highlight-1);
+    width: 11rem;
+}
