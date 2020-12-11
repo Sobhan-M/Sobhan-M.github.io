@@ -1,154 +1,89 @@
 <!DOCTYPE html>
-<html lang = "en">
-
-    <!-- Meta Data -->
-    <head>
-        <title> Sobhan's Education and Academics </title>
-        <meta charset = "utf-8"/>
-        <meta name = "description" content = "My career background."/>
-        <meta name = "author" content = "Sobhan Mehrpour"/>
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-        <meta name = "keywords" content = "resume, work, career, career background, sobhan m, sobhan mehrpour, sobhan mehrpour kevishahi"/>
-
-        <link rel = "stylesheet" type = "text/CSS" href = "Styles/template.css"/>
-        <style type = "text/CSS">
-            #institute *, #grades *, #field * {font-weight: bold;}
-            h3 {padding-top: 1.5%;
-                padding-bottom: 1.5%;}
-            h5 {padding-bottom: 1.5%;}
-            p {padding-bottom: 2%;
-                text-align: justify;}
-            .filter td {vertical-align: top;
-                text-align: left;
-                width: 10em;;}
-            .filter h5 {text-align: left;}
-            .filter td input {margin-left:20%;}
-            .filter td h5 {margin-left:20%;}
-            button {margin: 2%;
-                padding: 2% 8%;}
-            td.button_cell {text-align: center;}
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Sobhan M.</title>
+    <link rel = "stylesheet" type = "text/CSS" href = "CSS/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
     
-    <!-- Body -->
-    <body>
+    <!-- Nav Bar -->
 
-        <!-- Navigation Bar -->
-        <header class = "nav-bar">
-            <nav>
-                <a href = "index.html"> Home </a>
-                <a href = "education.html"> Education </a>
-                <a class = "current_page" href = "work.html"> Work Experience </a>
-                <a href = ""> Personal Projects </a>
-                <a href = ""> Biography </a>
-            </nav>
-        </header>
-        <br/>
-
-        <!-- Filters -->
-        <section class = "filter not_banner">
-            <form action = "">
-                <table>
-                    <tr>
-                        <td>
-                            <h5> Sorting </h5>
-                            <input type = "radio" name = "order" value = "new" checked class = "radio">
-                            <label> Sort By Newest </label> <br/>
-                            <input type = "radio" name = "order" value = "old" class = "radio">
-                            <label> Sort By Oldest </label> <br/>
-                        </td>
-                        <td>
-                            <h5> Filters </h5>
-                            <input type = "checkbox" name = "filter" value = "current" checked class = "check">
-                            <label> Current </label> <br/>
-                            <input type = "checkbox" name = "filter" value = "temporary" checked class = "check">
-                            <label> Temporary </label> <br/>
-                            <input type = "checkbox" name = "filter" value = "internship" checked class = "check">
-                            <label> Internship </label> <br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class = "button_cell" colspan = "2">
-                            <button type = "button" id = "filter_button" onclick = "myFilter();"> Filter </button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+    <nav class = "nav-bar">
+        <section class = "nav-list">
+            <div class = "nav-item">
+                <a href = "index.html" class="fa fa-home icon"></a>
+                <a href = "index.html" class = "nav-page">Home</a>
+            </div>
+            <div class = "nav-item">
+                <a href = "work.html" class = "fa fa-briefcase icon"></a>
+                <a href = "work.html" class = "nav-page">Work</a>
+            </div>
+            <div class = "nav-item">
+                <a href = "education.html" style = "padding-left: 0.5rem;" class="fa fa-graduation-cap icon"></a>
+                <a href = "education.html" class = "nav-page" style = "margin-left: 0.25rem;">Education</a>
+            </div>
+            <div class = "nav-item">
+                <a href = "projects.html" class="fa fa-tasks icon"></a>
+                <a href = "projects.html" class = "nav-page">Projects</a>
+            </div>
+            <div class = "nav-item">
+                <a href = "skills.html" class="fa fa-trophy icon"></a>
+                <a href = "skills.html" class = "nav-page">Skills</a>
+            </div>
         </section>
-        <br/>
+    </nav>
 
+    <aside class = "filter">
+        
+    </aside>
 
-        <!-- Work Experience -->
-        <section id = "work_experience">
-            
-            <div class = "banner work current">
-                <h3> Freelance Content Writer </h3>
-                <h5> May, 2020 - Current</h4>
-                <p> 
-                    After the COVID-19 pandemic took away my other sources of income, 
-                    I decided to make the best of the situation and try to make an income online. 
-                    Writing was the one skill I thought I would do best at, as I had been paid for my
-                    writing a few times in the past.
-                </p>
-                <h5> Description </h5>
-                <p>
-                    My clients send the topic they want written, as well as the word count they want.
-                    My job is to research the topic to find useful information, and write the articles, blogs,
-                    or copies my clients want.
-                </p>
-                <p>
-                    I'm happy to report that my clients are more than happy with my work, and I've
-                    continuously tried to improve my craft by taking reputable seminars.
-                </p>
+    <section class = "main-content">
+
+        <!-- Main Information -->
+
+        <article class = "job-block js-current js-freelance">
+            <header><h2>Freelance Content Writer</h2><hr/></header>
+            <div class = "job-properties">
+                <h4>Work Period:</h4>
+                <p>June 2020 to Now</p>
             </div>
-
-            <div class = "not_banner work temporary">
-                <h3> Freelance Photographer </h3>
-                <h5> September, 2019 - March, 2020 </h5>
-                <p>
-                    I started doing freelance photography after I moved to Montreal and started University.
-                    I used my hobby to make a bit of income to support my studies until I could find a 
-                    more reliable form of employment. Unfortunately, finding even basic work without speaking 
-                    French in Montreal proved much harder than I imagined.
-                </p>
-                <p>
-                    That's why my temporary means of income lasted for longer than I would have expected, 
-                    before coming to an end because of the COVID-19 lockdowns.
-                </p>
-
+            <div class = "job-properties">
+                <h4>Work Skills / Tools:</h4>
+                <p>SEO Copywriting | Web Research | Microsoft Word</p>
             </div>
-
-            <div class = "banner work internship">
-                <h3> ServCorp Marketing Intern </h3>
-                <h5> July, 2018 - August, 2018 </h5>
-                <h5>Company Details</h5>
-                <p>
-                    ServCorp is a provider of serviced offices, meeting rooms, coworking spaces, and virtual offices. 
-                    They are international company, but I interned at the branch operating out of Emirates Towers, Dubai.
-                </p>
-                <h5>Description</h5>
-                <p>
-                    I worked closely with the marketing team. I was given a broad range of tasks during my short time at the company.
-                    My tasks included auditing websites, translating information to be used in creating the website of a new branch,
-                    minor website development, market research, and did some training with Google Ads.
-                </p>
+            <div class = "job-properties">
+                <h4>Notable Clients:</h4>
+                <p> AAAnimal Advertising</p>
             </div>
+        </article>
 
-        </section>
-        <br/>
+        <article class = "job-block js-freelance">
+            <header><h2>Freelance Photographer</h2><hr/></header>
+            <div class = "job-properties">
+                <h4>Work Period:</h4>
+                <p>September 2019 to March 2020</p>
+            </div>
+            <div class = "job-properties">
+                <h4>Work Skills / Tools:</h4>
+                <p> Intermediate Photographic Techniques | Photographic Lighting | Adobe Photoshop | Customer Interaction </p>
+            </div>
+        </article>
 
-        <!-- Footer -->
-        <footer>
-            <table>
-                <tr>
-                    <td> Email: <a href = "mailto:s.kevishahi@gmail.com"> s.kevishahi@gmail.com </a></td>
-                    <td> LinkedIn: <a href = "https://www.linkedin.com/in/sobhan-mehrpour-664807192/"> Sobhan Mehrpour </a></td>
-                    <td> GitHub: <a href = "https://github.com/Sobhan-M"> Sobhan-M </a></td>
-                </tr>       
-            </table>
-            © Sobhan Mehrpour 2020
-        </footer>
+        <article class = "job-block js-intern">
+            <header><h2>Servcorp Marketing Intern</h2><hr/></header>
+            <div class = "job-properties">
+                <h4>Work Period:</h4>
+                <p>July 2018 to August 2018</p>
+            </div>
+            <div class = "job-properties">
+                <h4>Work Skills / Tools:</h4>
+                <p> Google Ads Basics | Website Auditing | Market Research | Copywriting </p>
+            </div>
+        </article>
 
-        <script type = "text/JavaScript" src = "JavaScript/Work_Filter.js"> </script>
-    </body>
+    </section>
+</body>
 </html>

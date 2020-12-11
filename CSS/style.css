@@ -3,9 +3,10 @@
 :root{
     --primary: #111111;
     --seconday: #e9f1f7;
-    --tertiary: #4A0F5A;
+    --tertiary: #c000f5;
     --highlight-1: #1B0139;
     --highlight-2: #1d1d1d;
+    --primary-accent: #161616;
 
     font-size: 16px;
     font-family: 'Cabin', sans-serif;
@@ -17,6 +18,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Navigation Bar */
 
 .nav-bar {
     display: flex;
@@ -42,24 +45,109 @@ body {
 .nav-item {
     display: flex;
     align-items: center;
-    /* transition: 0.2s; */
 }
-.nav-item i {
+a.icon {
     font-size: 2.5rem;
     padding: 0.75rem;
 }
-.nav-item p {
+.nav-item .nav-page {
     margin-left: 0.75rem;
     display: none;
 }
 .nav-bar:hover {
     width: 11rem;
 }
-.nav-bar:hover p {
+.nav-bar:hover .nav-page {
     display: block;
 }
-
 .nav-item:hover {
     background-color: var(--highlight-1);
     width: 11rem;
+}
+.nav-item a {
+    color: var(--seconday);
+    text-decoration: none;
+}
+
+/* Page Main Body */
+
+.main-content {
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+.nav-bar:hover + .main-content {
+    margin-left: 13rem;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--highlight-2);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-accent);
+}
+
+/* Text Elements */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+p {
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+a {
+    color: var(--tertiary);
+}
+
+/* Work Page */
+
+.job-block {
+    display: flex;
+    flex-direction: column;
+}
+.job-properties {
+    display: flex;
+    align-items: baseline;
+}
+.job-properties h4 {
+    margin-top: 0;
+}
+.job-properties p {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+@media only screen and (max-width: 750px){
+    .job-properties {
+        flex-direction: column;
+    }
+    .job-properties p {
+        margin-top: 0;
+        margin-left: 1rem;
+        text-align: left;
+    }
 }
