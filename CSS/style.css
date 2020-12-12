@@ -75,7 +75,7 @@ a.icon {
     margin-left: 6rem;
     margin-right: 2rem;
 }
-.nav-bar:hover + .main-content {
+.nav-bar:hover ~ .main-content {
     margin-left: 13rem;
 }
 
@@ -88,10 +88,10 @@ a.icon {
     background-color: var(--highlight-2);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
+    background-color: var(--primary-accent);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--primary-accent);
+    background-color: var(--primary);
 }
 
 /* Text Elements */
