@@ -3,7 +3,7 @@
 :root{
     --primary: #111111;
     --seconday: #e9f1f7;
-    --tertiary: #c000f5;
+    --tertiary: #df7dfa;
     --highlight-1: #1B0139;
     --highlight-2: #1d1d1d;
     --primary-accent: #161616;
@@ -146,6 +146,35 @@ a {
         flex-direction: column;
     }
     .job-properties p {
+        margin-top: 0;
+        margin-left: 1rem;
+        text-align: left;
+    }
+}
+
+/* Education Page */
+
+.academics-block {
+    display: flex;
+    flex-direction: column;
+}
+.academics-properties {
+    display: flex;
+    align-items: baseline;
+}
+.academics-properties h4 {
+    margin-top: 0;
+}
+.academics-properties p {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+@media only screen and (max-width: 750px){
+    .academics-properties {
+        flex-direction: column;
+    }
+    .academics-properties p {
         margin-top: 0;
         margin-left: 1rem;
         text-align: left;
