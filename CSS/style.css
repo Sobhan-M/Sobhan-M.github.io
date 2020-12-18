@@ -180,3 +180,24 @@ a {
         text-align: left;
     }
 }
+
+/* Contact Page */
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+}
+.contact-properties {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+.contact-properties h4 {
+    margin-top: 0;
+}
+.contact-properties p {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 1rem;
+    text-align: left;
+}
