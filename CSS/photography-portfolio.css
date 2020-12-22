@@ -20,6 +20,7 @@
     right: 2rem;
     bottom: 2rem;
     font-size: 3rem;
+    -webkit-text-stroke: 1px black;
 }
 .disclaimer-icon i:hover {
     transition: 0.2s;
