@@ -12,3 +12,34 @@
     transition: 0.2s;
     opacity: 0.8;
 }
+
+/* Disclaimer CSS */
+
+.disclaimer-icon i {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 3rem;
+}
+.disclaimer-icon i:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}
+.disclaimer-icon i:hover+.disclaimer-body{
+    display: block;
+}
+.disclaimer-body {
+    position: fixed;
+    right: 4.5rem;
+    bottom: 2rem;
+    width: 14rem;
+    display: none;
+    background-color: var(--primary);
+}
+.disclaimer-body p {
+    font-size: 0.75rem;
+    text-align: justify;
+}
+.disclaimer-body:hover{
+    display: block;
+}
