@@ -5,7 +5,6 @@
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
-
 .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -27,18 +26,22 @@
 .photography {
     background-image: url("../Pictures/IMG_7095.JPG");
     background-size: cover;
+    background-position: center;
 }
 .writing {
     background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80");
     /* Photo Credit: https://unsplash.com/photos/npxXWgQ33ZQ */
     background-size: cover;
+    background-position: center;
 }
 .animation {
     background-image: url("../Pictures/animation.jpg");
     background-size: cover;
+    background-position: center;
 }
 .programming {
     background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     /* Photo Credit: https://unsplash.com/photos/b18TRXc8UPQ */
     background-size: cover;
+    background-position: center;
 }

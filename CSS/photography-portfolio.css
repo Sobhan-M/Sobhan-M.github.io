@@ -1,0 +1,14 @@
+@import url("portfolio.css");
+
+.photo-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    gap: 1rem;
+}
+.photo {
+    height: 153px;
+}
+.photo:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}
