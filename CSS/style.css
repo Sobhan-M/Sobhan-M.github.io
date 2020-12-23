@@ -34,6 +34,7 @@ body {
     top: 0;
     height: 100%;
     width: 4rem;
+    animation: nav-contrast 0.25s ease-out;
 }
 .nav-list {
     font-size: 1.25rem;
@@ -47,6 +48,7 @@ body {
 .nav-item {
     display: flex;
     align-items: center;
+    width: 4rem;
 }
 a.icon {
     font-size: 2.5rem;
@@ -54,13 +56,17 @@ a.icon {
 }
 .nav-item .nav-page {
     margin-left: 0.75rem;
-    display: none;
+    overflow-x: hidden;
+    width: 4rem;
 }
 .nav-bar:hover {
+    animation: nav-expand 0.25s ease-out;
     width: 11rem;
 }
 .nav-bar:hover .nav-page {
-    display: block;
+    overflow-x: visible;
+    animation: nav-expand 0.25s ease-out;
+    width: 11rem;
 }
 .nav-item:hover {
     background-color: var(--highlight-1);
@@ -71,20 +77,77 @@ a.icon {
     text-decoration: none;
 }
 
+/* Nav-bar Animations */
+
+@keyframes nav-expand {
+    from {
+        width: 4rem;
+    }
+    to {
+        width: 11rem;
+    }
+}
+@keyframes nav-contrast {
+    from {width: 11rem;}
+    to {width: 4rem;}
+}
+@keyframes body-expand-desktop {
+    from {
+        margin-left: 6rem;
+    }
+    to {
+        margin-left: 13rem;
+    }
+}
+@keyframes body-expand-mobile {
+    from {
+        margin-left: 5rem;
+    }
+    to {
+        margin-left: 12rem;
+    }
+}
+@keyframes body-contrast-desktop {
+    from {
+        margin-left: 13rem;
+    }
+    to {
+        margin-left: 6rem;
+    }
+}
+@keyframes body-contrast-mobile {
+    from {
+        margin-left: 12rem;
+    }
+    to {
+        margin-left: 5rem;
+    }
+}
+
 /* Page Main Body */
 
 .main-content {
     margin-left: 6rem;
     margin-right: 2rem;
+    animation: body-contrast-desktop 0.25s ease-out;
 }
 @media only screen and (max-width: 750px){
     .main-content {
         margin-left: 5rem;
         margin-right: 1rem;
+        animation: body-contrast-mobile 0.25s ease-out;
     }
 }
+
 .nav-bar:hover ~ .main-content {
     margin-left: 13rem;
+    animation: body-expand-desktop 0.25s ease-out;
+}
+@media only screen and (max-width: 750px){
+    .nav-bar:hover ~ .main-content {
+        margin-left: 12rem;
+        animation: body-expand-mobile 0.25s ease-out;
+    }
 }
 
 /* Scroll Bar */

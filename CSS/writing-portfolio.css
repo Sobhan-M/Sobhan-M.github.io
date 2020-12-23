@@ -24,15 +24,24 @@
     text-decoration: none;
 }
 .writing-sample .article-body {
-    display: none;
-    opacity: 0;
-    height: 20rem;
-    transition: opacity 0.25s, display 0s, visibility 0s;
+    height: 0rem;
+    overflow-y: hidden;
+    animation: article-contrast 0.25s linear;
 }
 .writing-sample:hover .article-body {
-    display: block;
-    opacity: 1;
+    height: 20rem;
     overflow-y: scroll;
+    animation: article-expand 0.25s linear;
+}
+
+/* Animation */
+@keyframes article-expand {
+    from {height:0;}
+    to {height: 20rem;}
+}
+@keyframes article-contrast {
+    from {height:20rem;}
+    to {height: 0;}
 }
 
 /* Scroll Wheel */
@@ -57,3 +66,4 @@
         width: 100%;
     }
 }
+
