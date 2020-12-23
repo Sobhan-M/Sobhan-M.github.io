@@ -2,11 +2,19 @@
 
 .photo-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
 }
 .photo {
-    height: 153px;
+    height: 300px;
+}
+@media only screen and (max-width: 750px){
+    .photo {
+        height: 195px;
+    }
+    .photo-container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }
 .photo:hover {
     transition: 0.2s;
