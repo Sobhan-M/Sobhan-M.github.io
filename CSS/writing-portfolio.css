@@ -48,3 +48,12 @@
 .writing-sample ::-webkit-scrollbar {
     width: 1.25rem;
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 750px){
+    h2 {font-size: 1.75rem;}
+    .writing-container {
+        width: 100%;
+    }
+}

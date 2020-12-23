@@ -77,6 +77,12 @@ a.icon {
     margin-left: 6rem;
     margin-right: 2rem;
 }
+@media only screen and (max-width: 750px){
+    .main-content {
+        margin-left: 5rem;
+        margin-right: 1rem;
+    }
+}
 .nav-bar:hover ~ .main-content {
     margin-left: 13rem;
 }
