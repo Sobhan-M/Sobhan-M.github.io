@@ -4,7 +4,7 @@
     --primary: #111111;
     --seconday: #e9f1f7;
     --tertiary: #df7dfa;
-    --highlight-1: #1B0139;
+    --highlight-1: #32006b;
     --highlight-2: #1d1d1d;
     --primary-accent: #161616;
     --secondary-accent: #313131;
@@ -34,7 +34,7 @@ body {
     top: 0;
     height: 100%;
     width: 4rem;
-    animation: nav-contrast 0.25s ease-out;
+    transition: 0.25s ease-out;
 }
 .nav-list {
     font-size: 1.25rem;
@@ -44,11 +44,14 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    width: 4rem;
+    transition: 0.25s ease-out;
 }
 .nav-item {
     display: flex;
     align-items: center;
     width: 4rem;
+    transition: 0.25s ease-out;
 }
 a.icon {
     font-size: 2.5rem;
@@ -58,14 +61,18 @@ a.icon {
     margin-left: 0.75rem;
     overflow-x: hidden;
     width: 4rem;
+    transition: 0.25s ease-out;
 }
 .nav-bar:hover {
-    animation: nav-expand 0.25s ease-out;
     width: 11rem;
 }
 .nav-bar:hover .nav-page {
-    overflow-x: visible;
-    animation: nav-expand 0.25s ease-out;
+    width: 11rem;
+}
+.nav-bar:hover .nav-list {
+    width: 11rem;
+}
+.nav-bar:hover .nav-item {
     width: 11rem;
 }
 .nav-item:hover {
@@ -77,76 +84,26 @@ a.icon {
     text-decoration: none;
 }
 
-/* Nav-bar Animations */
-
-@keyframes nav-expand {
-    from {
-        width: 4rem;
-    }
-    to {
-        width: 11rem;
-    }
-}
-@keyframes nav-contrast {
-    from {width: 11rem;}
-    to {width: 4rem;}
-}
-@keyframes body-expand-desktop {
-    from {
-        margin-left: 6rem;
-    }
-    to {
-        margin-left: 13rem;
-    }
-}
-@keyframes body-expand-mobile {
-    from {
-        margin-left: 5rem;
-    }
-    to {
-        margin-left: 12rem;
-    }
-}
-@keyframes body-contrast-desktop {
-    from {
-        margin-left: 13rem;
-    }
-    to {
-        margin-left: 6rem;
-    }
-}
-@keyframes body-contrast-mobile {
-    from {
-        margin-left: 12rem;
-    }
-    to {
-        margin-left: 5rem;
-    }
-}
-
 /* Page Main Body */
 
 .main-content {
     margin-left: 6rem;
     margin-right: 2rem;
-    animation: body-contrast-desktop 0.25s ease-out;
+    transition: 0.25s ease-out;
 }
 @media only screen and (max-width: 750px){
     .main-content {
         margin-left: 5rem;
         margin-right: 1rem;
-        animation: body-contrast-mobile 0.25s ease-out;
     }
 }
 
 .nav-bar:hover ~ .main-content {
     margin-left: 13rem;
-    animation: body-expand-desktop 0.25s ease-out;
 }
 @media only screen and (max-width: 750px){
     .nav-bar:hover ~ .main-content {
         margin-left: 12rem;
-        animation: body-expand-mobile 0.25s ease-out;
     }
 }
 
@@ -192,83 +149,4 @@ p {
 }
 a {
     color: var(--tertiary);
-}
-
-/* Work Page */
-
-.job-block {
-    display: flex;
-    flex-direction: column;
-}
-.job-properties {
-    display: flex;
-    align-items: baseline;
-}
-.job-properties h4 {
-    margin-top: 0;
-}
-.job-properties p {
-    margin-left: auto;
-    margin-right: 0;
-    text-align: right;
-}
-@media only screen and (max-width: 750px){
-    .job-properties {
-        flex-direction: column;
-    }
-    .job-properties p {
-        margin-top: 0;
-        margin-left: 1rem;
-        text-align: left;
-    }
-}
-
-/* Education Page */
-
-.academics-block {
-    display: flex;
-    flex-direction: column;
-}
-.academics-properties {
-    display: flex;
-    align-items: baseline;
-}
-.academics-properties h4 {
-    margin-top: 0;
-}
-.academics-properties p {
-    margin-left: auto;
-    margin-right: 0;
-    text-align: right;
-}
-@media only screen and (max-width: 750px){
-    .academics-properties {
-        flex-direction: column;
-    }
-    .academics-properties p {
-        margin-top: 0;
-        margin-left: 1rem;
-        text-align: left;
-    }
-}
-
-/* Contact Page */
-
-.contact-block {
-    display: flex;
-    flex-direction: column;
-}
-.contact-properties {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-}
-.contact-properties h4 {
-    margin-top: 0;
-}
-.contact-properties p {
-    margin-right: 0;
-    margin-top: 0;
-    margin-left: 1rem;
-    text-align: left;
 }

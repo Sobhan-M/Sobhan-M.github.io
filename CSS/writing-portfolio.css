@@ -16,32 +16,19 @@
 }
 .writing-sample header {
     background-color: var(--secondary-accent);
-    border-radius: 1rem;
 }
 .writing-sample .article-head * {
     text-align: center;
-    text-shadow: 0 1rem 1rem black;
     text-decoration: none;
 }
 .writing-sample .article-body {
     height: 0rem;
     overflow-y: hidden;
-    animation: article-contrast 0.25s linear;
+    transition: 0.25s linear;
 }
 .writing-sample:hover .article-body {
     height: 20rem;
     overflow-y: scroll;
-    animation: article-expand 0.25s linear;
-}
-
-/* Animation */
-@keyframes article-expand {
-    from {height:0;}
-    to {height: 20rem;}
-}
-@keyframes article-contrast {
-    from {height:20rem;}
-    to {height: 0;}
 }
 
 /* Scroll Wheel */
@@ -52,7 +39,7 @@
     background-color: var(--tertiary-accent);
 }
 .writing-sample ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--secondary-accent);
+    background-color: var(--seconday);
 }
 .writing-sample ::-webkit-scrollbar {
     width: 1.25rem;
