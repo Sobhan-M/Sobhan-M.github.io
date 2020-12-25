@@ -1,0 +1,77 @@
+
+/* Basic Grid Layout */
+
+.project-grid {
+    /* Grid details */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    
+    /* Appearance */
+    margin-top: 1rem;
+    width: 95%;
+    height: 95%;
+}
+.project-header {
+    /* Appearance */
+    padding: 0.5rem;
+    background-color: var(--secondary-accent);
+
+    text-align: center;
+}
+.project-header h3 {
+    margin-top: 0;
+}
+.project-body{
+    /* Appearance — Not Visible By Default */
+    height: fit-content;
+    overflow: hidden;
+    max-height: 0;
+
+    background-color: var(--primary-accent);
+
+    transition: 0.5s ease-out;
+}
+.project-body h4 {
+    margin-left: 0.5rem;
+}
+.project:hover .project-body {
+    /* Appearance — Body Appears on Hover */
+    max-height: 30rem;
+}
+.project:hover .project-header{
+    /* Hover indication */
+    background-color: var(--tertiary-accent);
+}
+
+/* Inner Contents */
+
+.information-grid {
+    /* Grid Appearance */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    gap: 1rem;
+}
+.information {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+}
+.information * {
+    /* Appearance */
+    text-align: center;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+.information p {
+    font-size: 1rem;
+}
+.information h4 {
+    margin-bottom: 0.2rem;
+}
+.information :last-of-type(p){
+    margin-bottom: 0.2rem;
+}
+
+
