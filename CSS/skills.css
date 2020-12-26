@@ -1,0 +1,52 @@
+
+/* Skill Block */
+
+.skill-area {
+    /* Formatting */
+    display: flex;
+    flex-direction: column;
+
+    /* Background */
+    background-color: var(--primary-accent);
+
+    /* Box Model */
+    margin-top: 1rem;
+}
+
+/* Header */
+
+.skill-header h2 {
+    /* Box Model */
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/* Skill Body */
+
+/* Formatting */
+.skill-body {
+    display: flex;
+}
+@media only screen and (max-width: 750px){
+    .skill-body {
+        flex-direction: column;
+    }
+}
+/* Text */
+.skill-body > p {
+    text-align: center;
+}
+@media only screen and (max-width: 750px){
+    .skill-body > p {
+        margin-top: 0.5rem;
+    }
+}
+.skill-body > p > i {
+    font-size: 1.75rem;
+}
+
+/* Aside */
+.skill-note * {
+    font-size: 1rem;
+    text-align: justify;
+}
