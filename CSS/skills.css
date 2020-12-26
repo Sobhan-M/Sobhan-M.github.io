@@ -27,7 +27,7 @@
 .skill-body {
     display: flex;
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1024px){
     .skill-body {
         flex-direction: column;
     }
@@ -35,10 +35,17 @@
 /* Text */
 .skill-body > p {
     text-align: center;
+    min-width: 84px;
+    
+    /* Formatting */
+    display: flex;
+    flex-direction: column;
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1024px){
     .skill-body > p {
         margin-top: 0.5rem;
+        display: block;
+        min-width: auto;
     }
 }
 .skill-body > p > i {
