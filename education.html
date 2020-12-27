@@ -9,33 +9,37 @@
     <script src="https://kit.fontawesome.com/b9cdc87a9c.js" crossorigin="anonymous"></script>
     <style type = "text/CSS">
 
-        /* Education Page */
-
-        .academics-block {
-            display: flex;
-            flex-direction: column;
-        }
-        .academics-properties {
-            display: flex;
-            align-items: baseline;
-        }
-        .academics-properties h4 {
-            margin-top: 0;
-        }
-        .academics-properties p {
-            margin-left: auto;
-            margin-right: 0;
-            text-align: right;
+        .academics-grid {
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
         @media only screen and (max-width: 750px){
-            .academics-properties {
-                flex-direction: column;
+            .academics-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             }
-            .academics-properties p {
-                margin-top: 0;
-                margin-left: 1rem;
-                text-align: left;
-            }
+        }
+
+        .academics-block {
+            background-color: var(--primary-accent);
+            border-left: 1rem solid var(--tertiary);
+        }
+        .academics-properties * {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        .academics-properties p:last-of-type{
+            margin-bottom: 1rem;
+        }
+        .academics-properties h4 {
+            margin-left: 1rem;
+        }
+        .academics-properties p {
+            font-size: 1rem;
+        }
+        .academics-block header h3 {
+            margin-left: 0.75rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -77,61 +81,63 @@
     </nav>
 
     <section class = "main-content">
-
+        <h1> Education </h1> <hr/>
         <!-- Main Information -->
 
-        <article class = "academics-block">
-            <header><h2>Undergraduate</h2><hr/></header>
-            <div class = "academics-properties">
-                <h4>Education Period:</h4>
-                <p>September 2019 to Now</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Institute:</h4>
-                <p>Concordia University</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Program:</h4>
-                <p>Computer Science</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Minor:</h4>
-                <p>Mathematics and Statistics</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>GPA:</h4>
-                <p>4.19</p>
-            </div>
-        </article>
+        <div class = "academics-grid">
+            <article class = "academics-block">
+                <header><h3>Undergraduate</h3><hr/></header>
+                <div class = "academics-properties">
+                    <h4>Education Period:</h4>
+                    <p>September 2019 to Now</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Institute:</h4>
+                    <p>Concordia University</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Program:</h4>
+                    <p>Computer Science</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Minor:</h4>
+                    <p>Mathematics and Statistics</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>GPA:</h4>
+                    <p>4.19</p>
+                </div>
+            </article>
 
-        <article class = "academics-block">
-            <header><h2>High School</h2><hr/></header>
-            <div class = "academics-properties">
-                <h4>Education Period:</h4>
-                <p>September 2015 to July 2019</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>School:</h4>
-                <p>Towheed Iranian School in Dubai</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Diploma:</h4>
-                <p>International Baccalaureate</p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Classes:</h4>
-                <p>
-                    Persian HL | English HL | Business Management HL | 
-                   Physics SL | Chemistry SL | Mathematics SL
-                </p>
-            </div>
-            <div class = "academics-properties">
-                <h4>Grade:</h4>
-                <p>
-                    36
-                </p>
-            </div>
-        </article>
+            <article class = "academics-block">
+                <header><h3>High School</h3><hr/></header>
+                <div class = "academics-properties">
+                    <h4>Education Period:</h4>
+                    <p>September 2015 to July 2019</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>School:</h4>
+                    <p>Towheed Iranian School in Dubai</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Diploma:</h4>
+                    <p>International Baccalaureate</p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Classes:</h4>
+                    <p>
+                        Persian HL | English HL | Business Management HL | 
+                    Physics SL | Chemistry SL | Mathematics SL
+                    </p>
+                </div>
+                <div class = "academics-properties">
+                    <h4>Grade:</h4>
+                    <p>
+                        36
+                    </p>
+                </div>
+            </article>
+        </div>
     </section>
     
     <!-- JavaScript to add nav transitions -->

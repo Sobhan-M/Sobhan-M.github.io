@@ -7,6 +7,28 @@
     <link rel = "stylesheet" type = "text/CSS" href = "CSS/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b9cdc87a9c.js" crossorigin="anonymous"></script>
+    <style type = "text/CSS">
+        .question {
+            /* Appearance */
+            border-left: 1rem solid var(--tertiary);
+            margin: 2rem 0;
+
+            background-color: var(--primary-accent);
+        }
+        .question h2 {
+            margin-top: 0;
+            margin-left: 0.5rem;
+            padding: 0.5rem;
+        }
+        .question p {
+            margin-left: 2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+            text-align: justify;
+        }
+        
+    </style>
 </head>
 <body>
 
@@ -46,33 +68,39 @@
     </nav>
 
     <section class = "main-content">
-
+        <h1> Home </h1> <hr/>
         <!-- Main Information -->
 
-        <h1>What Is This Website?</h1><hr/>
-        <p>
-            This website is a complete, dynamic, and easy to use online resume.
-            It's here to present all the information about me in a neat little package.
-            Thus allowing you to make a better assessment regarding my skills and abilities.
-            It also gives you more context into who I am as an individual beyond what I can put down on a piece of paper.
-        </p>
-        <h1>What Can You Expect To Find Here?</h1><hr/>
-        <p>
-            You can expect to see a clear indication of my skills, as I'll be highlighting and presenting 
-            all my abilities within this website. 
-            You'll also be able to take a look at all the projects I've worked on, even if some are 
-            irrelevant to the position I'm applying for. 
-            Finally, you can expect to get an honest representation of who I am as a person, so you can 
-            reach your own conclusion about me.
-        </p>
-        <h1>Who Made This Website?</h1><hr/>
-        <p>
-            I made this website entirely on my own, using basic HTML, CSS, and JavaScript that I had learnt from university. 
-            I did consult web resources while making this, as some elements/features were foreign to me. 
-            My primary web sources were <a href = "https://fireship.io/">fireship.io</a> and <a href = "https://www.w3schools.com/">w3schools.com</a>. 
-            The icons you see are directly from <a href = "https://fontawesome.com/">fontawesome.com</a>, and I'm using the
-            <a href = "https://fonts.google.com/specimen/Cabin?query=cabin">Cabin</a> font which is imported using the Google API.
-        </p>
+        <div class = "question">
+            <h2>What Is This Website?</h2>
+            <p>
+                This website is a complete, dynamic, and easy to use online resume.
+                It's here to present all the information about me in a neat little package.
+                Thus allowing you to make a better assessment regarding my skills and abilities.
+                It also gives you more context into who I am as an individual beyond what I can put down on a piece of paper.
+            </p>
+        </div>
+        <div class = "question">
+            <h2>What Can You Expect To Find Here?</h2>
+            <p>
+                You can expect to see a clear indication of my skills, as I'll be highlighting and presenting 
+                all my abilities within this website. 
+                You'll also be able to take a look at all the projects I've worked on, even if some are 
+                irrelevant to the position I'm applying for. 
+                Finally, you can expect to get an honest representation of who I am as a person, so you can 
+                reach your own conclusion about me.
+            </p>
+        </div>
+        <div class = "question">
+            <h2>Who Made This Website?</h2>
+            <p>
+                I made this website entirely on my own, using basic HTML, CSS, and JavaScript that I had learnt from university. 
+                I did consult web resources while making this, as some elements/features were foreign to me. 
+                My primary web sources were <a href = "https://fireship.io/">fireship.io</a> and <a href = "https://www.w3schools.com/">w3schools.com</a>. 
+                The icons you see are directly from <a href = "https://fontawesome.com/">fontawesome.com</a>, and I'm using the
+                <a href = "https://fonts.google.com/specimen/Cabin?query=cabin">Cabin</a> font which is imported using the Google API.
+            </p>
+        </div>
     </section>
     
     <!-- JavaScript to add nav transitions -->

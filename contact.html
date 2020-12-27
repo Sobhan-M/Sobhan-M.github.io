@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b9cdc87a9c.js" crossorigin="anonymous"></script>
     <style type = "text/CSS">
-        
-        /* Contact Page */
-
-        .contact-block {
-            display: flex;
-            flex-direction: column;
+        .contact-grid {
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
-        .contact-properties {
-            display: flex;
-            align-items: baseline;
-            flex-direction: column;
+        @media only screen and (max-width: 750px){
+            .contact-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+        }
+        .contact-info {
+            background-color: var(--primary-accent);
+            border-left: 1rem solid var(--tertiary);
+        }
+        .contact-properties * {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        .contact-properties p:last-of-type{
+            margin-bottom: 1rem;
         }
         .contact-properties h4 {
-            margin-top: 0;
+            margin-left: 1rem;
         }
         .contact-properties p {
-            margin-right: 0;
-            margin-top: 0;
-            margin-left: 1rem;
-            text-align: left;
+            font-size: 1rem;
         }
+       
     </style>
 </head>
 <body>
@@ -69,28 +76,41 @@
     </nav>
 
     <section class = "main-content">
-
+        <h1> Contact Information </h1> <hr/>
         <!-- Main Information -->
 
-        <article class = "contact-block">
-            <header><h2>Contact Information</h2><hr/></header>
-            <div class = "contact-properties">
-                <h4>Name:</h4>
-                <p>Sobhan Mehrpour Kevishahi</p>
-            </div>
-            <div class = "contact-properties">
-                <h4>Email:</h4>
-                <p>s.kevishahi@gmail.com</p>
-            </div>
-            <div class = "contact-properties">
-                <h4>LinkedIn:</h4>
-                <p><a href = "https://www.linkedin.com/in/sobhan-mehrpour-664807192/">Sobhan Mehrpour</a></p>
-            </div>
-            <div class = "contact-properties">
-                <h4>GitHub:</h4>
-                <p><a href = "https://github.com/Sobhan-M">Sobhan-M</a></p>
-            </div>
-        </article>
+        <div class = "contact-grid">
+            <article class = "contact-info">
+                <div class = "contact-properties">
+                    <h4><i class="fas fa-user-circle"></i> Name:</h4>
+                    <p>Sobhan Mehrpour Kevishahi</p>
+                </div>
+                <div class = "contact-properties">
+                    <h4><i class="fas fa-envelope"></i> Email:</h4>
+                    <p>s.kevishahi@gmail.com</p>
+                </div>
+                <div class = "contact-properties">
+                    <h4><i class="fab fa-linkedin"></i> LinkedIn:</h4>
+                    <p><a href = "https://www.linkedin.com/in/sobhan-mehrpour-664807192/">Sobhan Mehrpour</a></p>
+                </div>
+                <div class = "contact-properties">
+                    <h4><i class="fab fa-github"></i> GitHub:</h4>
+                    <p><a href = "https://github.com/Sobhan-M">Sobhan-M</a></p>
+                </div>
+            </article>
+
+            <article class = "contact-info">
+                <div class = "contact-properties">
+                    <h4><i class="fas fa-male"></i> Bio:</h4>
+                    <p>
+                        I was born in Dubai and currently live in Montreal where I'm a student. 
+                        My definition of fun involves sitting down with a cup of tea, a good book, and a grumpy cat to glare at me. 
+                        I'm not a people-person and I don't talk much. In fact, this bio only exists because it improves this page's aesthetics.
+                    </p>
+                </div>
+            </article>
+        </div>
+        
 
     </section>
     

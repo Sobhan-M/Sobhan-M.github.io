@@ -16,6 +16,7 @@
     /* Appearance */
     padding: 0.5rem;
     background-color: var(--secondary-accent);
+    border-left: 1rem solid var(--secondary);
 
     text-align: center;
 }
@@ -29,6 +30,7 @@
     max-height: 0;
 
     background-color: var(--primary-accent);
+    border-left: 1rem solid var(--tertiary);
 
     transition: 0.5s ease-out;
 }
@@ -42,6 +44,9 @@
 .project:hover .project-header{
     /* Hover indication */
     background-color: var(--tertiary-accent);
+}
+.project-body p:last-of-type {
+    margin-bottom: 1rem;
 }
 
 /* Inner Contents */

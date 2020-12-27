@@ -9,33 +9,37 @@
     <script src="https://kit.fontawesome.com/b9cdc87a9c.js" crossorigin="anonymous"></script>
     <style type = "text/CSS">
         
-        /* Work Page */
-
-        .job-block {
-            display: flex;
-            flex-direction: column;
-        }
-        .job-properties {
-            display: flex;
-            align-items: baseline;
-        }
-        .job-properties h4 {
-            margin-top: 0;
-        }
-        .job-properties p {
-            margin-left: auto;
-            margin-right: 0;
-            text-align: right;
+        .work-grid {
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
         @media only screen and (max-width: 750px){
-            .job-properties {
-                flex-direction: column;
+            .work-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             }
-            .job-properties p {
-                margin-top: 0;
-                margin-left: 1rem;
-                text-align: left;
-            }
+        }
+
+        .job-block {
+            background-color: var(--primary-accent);
+            border-left: 1rem solid var(--tertiary);
+        }
+        .job-properties * {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        .job-properties p:last-of-type{
+            margin-bottom: 1rem;
+        }
+        .job-properties h4 {
+            margin-left: 1rem;
+        }
+        .job-properties p {
+            font-size: 1rem;
+        }
+        .job-block header h3 {
+            margin-left: 0.75rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -76,58 +80,56 @@
         </section>
     </nav>
 
-    <aside class = "filter">
-        
-    </aside>
-
     <section class = "main-content">
-
+        <h1> Work Experience </h1> <hr/>
         <!-- Main Information -->
 
-        <article class = "job-block js-current js-freelance">
-            <header><h2>Freelance Content Writer</h2><hr/></header>
-            <div class = "job-properties">
-                <h4>Work Period:</h4>
-                <p>June 2020 to Now</p>
-            </div>
-            <div class = "job-properties">
-                <h4>Work Skills / Tools:</h4>
-                <p>SEO Copywriting | Web Research | Microsoft Word</p>
-            </div>
-            <div class = "job-properties">
-                <h4>Notable Clients:</h4>
-                <p> AAAnimal Advertising</p>
-            </div>
-            <div class = "job-properties">
-                <h4>Accomplishments:</h4>
-                <p> Over 170 articles written without missing a deadline, getting a complaint, or receiving a rewrite request.</p>
-            </div>
-        </article>
+        <div class = "work-grid">
+            <article class = "job-block">
+                <header><h3>Freelance Content Writer</h3><hr/></header>
+                <div class = "job-properties">
+                    <h4>Work Period:</h4>
+                    <p>June 2020 to Now</p>
+                </div>
+                <div class = "job-properties">
+                    <h4>Work Skills / Tools:</h4>
+                    <p>SEO Copywriting | Web Research | Microsoft Word</p>
+                </div>
+                <div class = "job-properties">
+                    <h4>Notable Clients:</h4>
+                    <p> AAAnimal Advertising</p>
+                    <p>GameRant / Valnet</p>
+                </div>
+                <div class = "job-properties">
+                    <h4>Accomplishments:</h4>
+                    <p> Over 170 articles written without missing a deadline, getting a complaint, or receiving a rewrite request.</p>
+                </div>
+            </article>
 
-        <article class = "job-block js-freelance">
-            <header><h2>Freelance Photographer</h2><hr/></header>
-            <div class = "job-properties">
-                <h4>Work Period:</h4>
-                <p>September 2019 to March 2020</p>
-            </div>
-            <div class = "job-properties">
-                <h4>Work Skills / Tools:</h4>
-                <p> Intermediate Photographic Techniques | Photographic Lighting | Adobe Photoshop | Customer Interaction </p>
-            </div>
-        </article>
+            <article class = "job-block">
+                <header><h3>Freelance Photographer</h3><hr/></header>
+                <div class = "job-properties">
+                    <h4>Work Period:</h4>
+                    <p>September 2019 to March 2020</p>
+                </div>
+                <div class = "job-properties">
+                    <h4>Work Skills / Tools:</h4>
+                    <p> Intermediate Photographic Techniques | Photographic Lighting | Adobe Photoshop | Customer Interaction </p>
+                </div>
+            </article>
 
-        <article class = "job-block js-intern">
-            <header><h2>Servcorp Marketing Intern</h2><hr/></header>
-            <div class = "job-properties">
-                <h4>Work Period:</h4>
-                <p>July 2018 to August 2018</p>
-            </div>
-            <div class = "job-properties">
-                <h4>Work Skills / Tools:</h4>
-                <p> Google Ads Basics | Website Auditing | Market Research | Copywriting </p>
-            </div>
-        </article>
-
+            <article class = "job-block">
+                <header><h3>Servcorp Marketing Intern</h3><hr/></header>
+                <div class = "job-properties">
+                    <h4>Work Period:</h4>
+                    <p>July 2018 to August 2018</p>
+                </div>
+                <div class = "job-properties">
+                    <h4>Work Skills / Tools:</h4>
+                    <p> Google Ads Basics | Website Auditing | Market Research | Copywriting </p>
+                </div>
+            </article>
+        </div>
     </section>
     
     <!-- JavaScript to add nav transitions -->

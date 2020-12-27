@@ -16,12 +16,21 @@
 }
 .writing-sample header {
     background-color: var(--secondary-accent);
+    border-left: 1rem solid white;
 }
 .writing-sample .article-head * {
     text-align: center;
+    color: var(--secondary);
     text-decoration: none;
 }
+.article-head a:hover {
+    color: var(--tertiary);
+    text-decoration: underline;
+    /* text-decoration: none; */
+}
 .writing-sample .article-body {
+    background-color: var(--primary-accent);
+    border-left: 1rem solid var(--tertiary);
     height: 0rem;
     overflow-y: hidden;
     transition: 0.25s linear;
@@ -30,16 +39,19 @@
     height: 20rem;
     overflow-y: scroll;
 }
+.writing-sample:hover header {
+    background-color: var(--tertiary-accent);
+}
 
 /* Scroll Wheel */
 .writing-sample ::-webkit-scrollbar-track {
     background-color: var(--primary);
 }
 .writing-sample ::-webkit-scrollbar-thumb {
-    background-color: var(--tertiary-accent);
+    background-color: var(--secondary-accent);
 }
 .writing-sample ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--seconday);
+    background-color: var(--secondary);
 }
 .writing-sample ::-webkit-scrollbar {
     width: 1.25rem;

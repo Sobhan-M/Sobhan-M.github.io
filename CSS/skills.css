@@ -6,8 +6,9 @@
     display: flex;
     flex-direction: column;
 
-    /* Background */
+    /* Appearance */
     background-color: var(--primary-accent);
+    border-left: 1rem solid var(--tertiary);
 
     /* Box Model */
     margin-top: 1rem;

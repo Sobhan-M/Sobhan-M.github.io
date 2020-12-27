@@ -2,7 +2,7 @@
 
 :root{
     --primary: #111111;
-    --seconday: #e9f1f7;
+    --secondary: #e9f1f7;
     --tertiary: #df7dfa;
     --highlight-1: #32006b;
     --highlight-2: #1d1d1d;
@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--highlight-2);
-    color: var(--seconday);
+    color: var(--secondary);
     margin: 0;
     padding: 0;
 }
@@ -89,7 +89,7 @@ a.icon {
     width: 11rem;
 }
 .nav-item a {
-    color: var(--seconday);
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -98,6 +98,7 @@ a.icon {
 .main-content {
     margin-left: 6rem;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     /* Handled By JavaScript */
     /* transition: 0.25s ease-out; */
 }
