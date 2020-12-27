@@ -46,7 +46,7 @@
     background-color: var(--tertiary-accent);
 }
 .project-body p:last-of-type {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Inner Contents */
