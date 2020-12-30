@@ -161,3 +161,17 @@ p {
 a {
     color: var(--tertiary);
 }
+
+/* 4K Support */
+@media only screen and (min-width: 2000px){
+    :root {font-size: 24px;}
+}
+@media only screen and (min-width: 2500px){
+    :root {font-size: 28px;}
+}
+@media only screen and (min-width: 3000px){
+    :root {font-size: 32px;}
+}
+@media only screen and (min-width: 3500px){
+    :root {font-size: 36px;}
+}
