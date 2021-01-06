@@ -14,6 +14,9 @@
 .writing-sample h4 {
     margin-left: 2rem;
 }
+.writing-sample h3 {
+    margin-left: 2rem;
+}
 .writing-sample header {
     background-color: var(--secondary-accent);
     border-left: 1rem solid white;
