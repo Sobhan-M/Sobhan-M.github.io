@@ -34,12 +34,12 @@
 .writing-sample .article-body {
     background-color: var(--primary-accent);
     border-left: 1rem solid var(--tertiary);
-    height: 0rem;
     overflow-y: hidden;
     transition: 0.25s linear;
+    max-height: 0rem;
 }
 .writing-sample:hover .article-body {
-    height: 20rem;
+    max-height: 20rem;
     overflow-y: scroll;
 }
 .writing-sample:hover header {
