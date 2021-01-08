@@ -48,7 +48,6 @@
 }
 .disclaimer-body p {
     font-size: 0.75rem;
-    text-align: justify;
 }
 .disclaimer-body:hover{
     visibility: visible;
